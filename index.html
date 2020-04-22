@@ -7,10 +7,28 @@
     <title>WDD 230 Assignment Portal</title>
     <meta name="description" content="WDD 230 Assignment Portal page for BYUI">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">   
+    <link rel="stylesheet" href="css/main.css">  
+    <script type="text/javascript">
+        function GetFileInfo () {
+            var message = "";
+            
+            if (document.fileModifiedDate) {
+                message += "Last updated: " + document.fileModifiedDate;
+            }
+            if (document.lastModified) {
+                message += "Last updated: " + document.lastModified;
+            }
+            if (document.fileUpdatedDate) {
+                message += "Last updated: " + document.fileUpdatedDate;
+            }
+            
+            var info = document.getElementById ("updatedDate");
+            info.textContent = message;
+        }
+    </script>     
 </head>
 
-<body>
+<body onload="GetFileInfo ();">
     <header>
         <img src="images/ProfilePicture.png" width="267" height="398" alt="Drew Parkinson Profile picture">
         <h1>Drew Parkinson</h1>
@@ -32,12 +50,8 @@
             <p>&copy; Drew Parkinson | Oregon | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
         </div>
         <div>
-            Last updated: <span id="updatedDate"></span>
+            <span id="updatedDate"></span>
         </div>
     </footer>
 </body>
-<script>
-    var lastModified = document.lastModified;
-    document.getElementById("updatedDate").textContent = lastModified;
-</script> 
 </html>
