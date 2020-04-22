@@ -1,0 +1,66 @@
+/* WDD 230 - Assignment Portal CSS */
+
+/* * is a wildcard referring to all elements. */
+* {
+    margin: 25px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    justify-content: flex-start;
+    font-family:
+    Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 23
+        /* x.xrem  (rem is a unit of measure) */
+    ;
+    color: whitesmoke
+        /* #xxxxxx */
+    ;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header,
+main,
+footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+}
+
+header,
+footer,
+footer a {
+    text-align: center;
+    background-color: navy
+        /* */
+    ;
+    color: whitesmoke;
+}
+
+header img {
+    width: 20%
+        /*  */
+    ;
+    height: 20%;
+    float: right;
+}
+
+nav lessons {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+footer div {
+    text-align: center;
+}
