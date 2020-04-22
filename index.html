@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 230 Assignment Portal</title>
     <meta name="description" content="WDD 230 Assignment Portal page for BYUI">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+        var lastModified = document.lastModified;
+        document.getElementById("updatedDate").textContent = lastModified;
+    </script>    
 </head>
 
 <body>
@@ -18,18 +24,21 @@
     <main>
         <h2>WDD 230: Assignment Portal</h2>
         <nav class="lessons">
-            <ol>
+            <ul>
                 <li>W01 Assignment: <a href="#">Assignment Link</a></li>
                 <li>W02 Assignment: <a href="#">Assignment Link</a></li>
                 <li>W03 Assignment: <a href="#">Assignment Link</a></li>
                 <li>W04 Assignment: <a href="#">Assignment Link</a></li>
-            </ol>
+            </ul>
         </nav>
     </main>
     <footer>
-        <div id="footer">
-        <p>&copy; Drew Parkinson | Oregon | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-    </div>
+        <div id="footerInfo">
+            <p>&copy; Drew Parkinson | Oregon | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        </div>
+        <div>
+            Last updated: <span id="updatedDate"></span>
+        </div>
     </footer>
 </body>
 
