@@ -7,11 +7,11 @@
     <title>WDD 230 Assignment Portal</title>
     <meta name="description" content="WDD 230 Assignment Portal page for BYUI">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript">
-        function GetFileInfo () {
+        function GetFileInfo() {
             var message = "";
-            
+
             if (document.fileModifiedDate) {
                 message += "Last updated: " + document.fileModifiedDate;
             }
@@ -21,21 +21,22 @@
             if (document.fileUpdatedDate) {
                 message += "Last updated: " + document.fileUpdatedDate;
             }
-            
-            var info = document.getElementById ("updatedDate");
+
+            var info = document.getElementById("updatedDate");
             info.textContent = message;
         }
-    </script>     
+    </script>
 </head>
 
 <body onload="GetFileInfo ();">
+    <div id="pageContent"></div>
     <header>
-        <img src="images/ProfilePicture.png" width="267" height="398" alt="Drew Parkinson Profile picture">
+        <img id="profile" src="images/ProfilePicture.png" width="267" height="398" alt="Drew Parkinson Profile picture">
         <h1>Drew Parkinson</h1>
     </header>
 
     <main>
-        <h2>WDD 230: Assignment Portal</h2>
+        <h2 id="portalContent">WDD 230: Assignment Portal</h2>
         <nav class="lessons">
             <ul>
                 <li>W01 Assignment: <a href="#">Assignment Link</a></li>
@@ -47,11 +48,13 @@
     </main>
     <footer>
         <div id="footerInfo">
-            <p>&copy; Drew Parkinson | Oregon | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p>&copy; <span id="year">2020</span> | Drew Parkinson | Oregon | <a id="footer_link" href="https://www.byui.edu/online">BYUI Online Learning</a></p>
         </div>
         <div>
             <span id="updatedDate"></span>
         </div>
     </footer>
+    </div>
 </body>
+
 </html>

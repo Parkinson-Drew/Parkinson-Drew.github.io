@@ -9,11 +9,11 @@
 body {
     font-size: 16px;
     justify-content: flex-start;
-    font-family:
-    Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
+    text-align: center;
     font-size: 23;
     color: whitesmoke;
 }
@@ -26,7 +26,7 @@ h2 {
 header,
 main,
 footer {
-    margin: 1.5rem auto;
+    margin: 1.5rem;
     padding: 1em;
     border-radius: 5px;
     max-width: 1200px;
@@ -38,7 +38,7 @@ footer a {
     text-align: center;
     background-color: navy;
     color: whitesmoke;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 header img {
@@ -56,6 +56,11 @@ nav ul {
     list-style-type: disc;
 }
 
-footer div {
-    text-align: center;
+
+#updated {
+    color: yellow;
+ }
+
+#footer_link {
+    color: white;
 }
