@@ -2,14 +2,16 @@
 
 /* * is a wildcard referring to all elements. */
 * {
-    margin: 25px;
+
     box-sizing: border-box;
 }
 
 body {
+    max-width: 750px;
     font-size: 16px;
     justify-content: flex-start;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto;
 }
 
 h1 {
@@ -24,17 +26,20 @@ h2 {
 }
 
 header,
-main,
 footer {
     margin: 1.5rem;
     padding: 1em;
-    border-radius: 5px;
-    max-width: 1200px;
+    border-radius: 10px;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
 }
 
 header,
-footer,
-footer a {
+footer {
     text-align: center;
     background-color: navy;
     color: whitesmoke;
@@ -63,4 +68,32 @@ nav ul {
 
 #footer_link {
     color: white;
+}
+
+@media only screen and (max-width: 680px) {
+body {
+    margin: 50px 20px;
+}
+
+h1 {
+    display: block;
+}
+
+.header-text {
+    display: block;
+    width: 100%;
+}
+#profile {
+    display: block;
+    position: initial;
+    margin: 10px auto;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        margin: 50px 20px;
+    }
 }
