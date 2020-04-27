@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 23px;
+    font-size:  1.5rem;
     color: whitesmoke;
     font-family: 'Oleo Script', cursive;
 }
@@ -25,6 +25,7 @@ h2 {
     text-align: center;
     border-bottom: 1px solid #bbb;
     font-family: 'Oleo Script', cursive;
+    font-size: 1.5rem;
 }
 
 header,
@@ -32,6 +33,10 @@ footer {
     margin: 1.5rem;
     padding: 1em;
     border-radius: 10px;
+    text-align: center;
+    background-color: navy;
+    color: whitesmoke;
+    padding: 1.5em;    
 }
 
 main {
@@ -40,13 +45,6 @@ main {
     text-align: left;
 }
 
-header,
-footer {
-    text-align: center;
-    background-color: navy;
-    color: whitesmoke;
-    padding: 1.5em;
-}
 
 header img {
     width: 20%;
@@ -70,32 +68,4 @@ nav ul {
 
 #footer_link {
     color: white;
-}
-
-@media only screen and (max-width: 680px) {
-body {
-    margin: 50px 20px;
-}
-
-h1 {
-    display: block;
-}
-
-.header-text {
-    display: block;
-    width: 100%;
-}
-#profile {
-    display: block;
-    position: initial;
-    margin: 10px auto;
-}
-
-}
-
-@media only screen and (max-width: 800px) {
-
-    body {
-        margin: 50px 20px;
-    }
 }
