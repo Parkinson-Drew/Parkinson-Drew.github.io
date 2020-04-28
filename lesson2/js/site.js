@@ -15,5 +15,6 @@ function GetFileInfo() {
     info.textContent = message;
 
     var date = new Date();
-    document.getElementById("year").innerHTML = date.getFullYear(); 
+    var currYear = document.getElementById("year");
+    currYear.textContent = date.getFullYear();  
 }
