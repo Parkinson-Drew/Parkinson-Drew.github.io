@@ -1,5 +1,4 @@
-var date = new Date();
-document.getElementById("year").innerHTML = date.getFullYear();
+
 
 function GetFileInfo() {
     var message = "";
@@ -16,4 +15,7 @@ function GetFileInfo() {
 
     var info = document.getElementById("updatedDate");
     info.textContent = message;
+
+    var date = new Date();
+    document.getElementById("year").innerHTML = date.getFullYear();    
 }
