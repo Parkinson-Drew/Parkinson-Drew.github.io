@@ -24,7 +24,8 @@ section h2,h3 {
     font-size:  1.5rem;
     color: whitesmoke;
     font-family: 'Glegoo', serif, Arial, Helvetica, sans-serif;
-    margin-top: 30px;  
+    margin-top: 30px; 
+    padding-bottom: 20px; 
 }
 header,
 footer {
