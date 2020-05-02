@@ -12,7 +12,7 @@ h1, h2, h3 {
     text-align: center;
     font-size:  1.5rem;
     color: whitesmoke;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Oleo Script', cursive, Arial, Helvetica, sans-serif;
     margin: auto;
 }
 
@@ -23,7 +23,8 @@ h2 {
 section h2,h3 {
     font-size:  1.5rem;
     color: whitesmoke;
-    font-family: 'Glegoo', serif;    
+    font-family: 'Glegoo', serif, Arial, Helvetica, sans-serif;
+    margin-top: 30px;  
 }
 header,
 footer {
