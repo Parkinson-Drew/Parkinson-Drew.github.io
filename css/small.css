@@ -25,12 +25,13 @@ h2 {
     text-align: center;
     border-bottom: 1px solid #bbb;
     font-family: 'Oleo Script', cursive;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
 }
 
 header,
 footer {
     margin: 1.5rem;
+    max-width: 920px;
     padding: 1em;
     border-radius: 10px;
     text-align: center;
@@ -49,7 +50,6 @@ main {
 header img {
     width: 20%;
     height: 20%;
-    float: right;
 }
 
 nav lessons {
