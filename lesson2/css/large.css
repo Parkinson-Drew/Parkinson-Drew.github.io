@@ -5,13 +5,15 @@
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 2.0rem;
 		font-weight: 600;
-	}	
+	}
+
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
 	p {
-        padding: 1.4em;
-    }  	
+		padding: 1.4em;
+	}
 }

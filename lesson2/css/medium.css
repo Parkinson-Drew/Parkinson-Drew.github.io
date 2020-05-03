@@ -5,7 +5,7 @@
       }
 
       h2 {
-          font-size: 1rem;
+          font-size: 1.8rem;
           font-weight: 500;
       }
 
@@ -23,7 +23,8 @@
       main {
           grid-template-columns: 1fr 1fr;
       }
+
       p {
-        padding: 1.2em;
-    }      
+          padding: 1.2em;
+      }
   }
