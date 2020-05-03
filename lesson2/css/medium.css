@@ -23,4 +23,7 @@
       main {
           grid-template-columns: 1fr 1fr;
       }
+      p {
+        padding: 1.2em;
+    }      
   }
