@@ -3,17 +3,6 @@
 /* * is a wildcard referring to all elements. */
 @media only screen and (min-width: 20em) {
 
-  
-
-  :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #011936;
-    --secondary-color: #465362;
-    --tertiary-color: #82a3a1;
-    --accent1-color: #9fc490;
-    --accent2-color: #c0dfa1;
-
-  }
 
   body {
     font-size: 18px;
@@ -156,19 +145,19 @@
     flex-direction: column;
   }
 
-  .main_typography > h1{
+  .main_typography>h1 {
     Font-size: 2em;
     color: blue;
     font-family: 'Exo', serif;
   }
 
-  .main_typography > h2{
+  .main_typography>h2 {
     Font-size: 1.5em;
     color: blue;
     font-family: 'Exo', serif;
   }
 
-  .main_typography > h3{
+  .main_typography>h3 {
     Font-size: 1.2em;
     color: blue;
     font-family: 'Exo', serif;
@@ -260,8 +249,7 @@
   }
 
   .primary {
-    /* background-color: #011936; */
-    background-color: var(--primary-color);
+    background-color: #011936;
   }
 
   .secondary {
@@ -269,14 +257,14 @@
   }
 
   .tertiary {
-    background-color: var(--tertiary-color);
+    background-color: #82a3a1;
   }
 
   .accent1 {
-    background-color: var(--accent1-color);
+    background-color: #9fc490;
   }
 
   .accent2 {
-    background-color: var(--accent2-color);
+    background-color: #c0dfa1;
   }
 }
