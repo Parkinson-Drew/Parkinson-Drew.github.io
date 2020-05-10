@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Weather Site Plan page for BYUI">
+    <title>GitRDone Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman">
+    <link href="https://fonts.googleapis.com/css?family=Exo">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/site.js"></script>
+</head>
+
+<body onload="GetFileInfo()"">
+    <div class=" container">
+    <nav class="flex-nav">
+        <ul>
+            <li><a href=".#">Home</a></li>
+            <li><a href="./target-audience.html">Target Audience</a></li>
+            <li><a href="./color-scheme.html">Color Scheme</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="logoheading">
+            <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+            <h1>GitRDone Weather</h1><br>
+            <h2>When you need to plan ahead</h2>
+        </div>
+    </header>
+    <main>
+        <h1 class="main_title">General Information</h1>
+        <h3>Site Name</h3>
+        <p><label>Name:</label> GitRDone Weather </p>
+        <p><label>URL:</label> <a target="_blank"
+                href="https://in.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=gitrdoneweather.com">gitrdoneweather.com</a>
+            Available on GoDaddy.com for $11.99</p>
+        <h3>Site Purpose</h3>
+        <p>The main purpose of gitrdoneweather.com is to allow our users to find accurate and up to date weather
+            forecasts for select cities.</p>
+        <p>Our users will visit the site and select their city from a dropdown selection of available cities.
+            They will be able to view the current weather for that location as well as the predicted weather forecast as
+            well.</p>
+        <p>The primary goal of this site is to inform its users of the current and upcoming weather so that they can
+            plan to gitrdone as soon as possible.
+        </p>
+        <h3>Logo</h3>
+        <p><img alt="Logo" class="logo" src="./images/sitelogo.jpg"></p>
+    </main>
+    <footer>
+        <div id="footerInfo">
+            <p>&copy; <span id="year"></span> | Drew Parkinson | Oregon | <a id="footer_link"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        </div>
+        <div>
+            <span id="updatedDate"></span>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

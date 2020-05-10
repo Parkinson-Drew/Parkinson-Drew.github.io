@@ -1,0 +1,282 @@
+/* WDD 230 - Assignment Portal CSS */
+
+/* * is a wildcard referring to all elements. */
+@media only screen and (min-width: 20em) {
+
+  
+
+  :root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #011936;
+    --secondary-color: #465362;
+    --tertiary-color: #82a3a1;
+    --accent1-color: #9fc490;
+    --accent2-color: #c0dfa1;
+
+  }
+
+  body {
+    font-size: 18px;
+    font-family: 'Exo', serif;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  /* Navigation Bar */
+
+
+
+  .toggleNav {
+    display: block;
+    color: #8b8b8b;
+  }
+
+  .toggleNav:hover,
+  .toggleNav:focus {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .flex-nav {
+    background-color: darkblue;
+    border-radius: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .flex-nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .2em;
+  }
+
+  .flex-nav li {
+    flex-basis: 80%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: .5em;
+  }
+
+  li {
+    float: left;
+    padding-bottom: .2rem;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  header h1 {
+    font-size: 45px;
+    font-family: 'Tangerine', serif, cursive, Arial, Helvetica;
+    text-align: center;
+    color: whitesmoke;
+    margin: auto;
+  }
+
+  header h2,
+  h3 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
+  }
+
+  /* section h2, h3 {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        font-family: 'Tangerine', serif, Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    } */
+
+  header,
+  footer {
+    margin: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: royalblue;
+    /* background-color: rgb(113, 106, 114); */
+    color: whitesmoke;
+    padding: .5em;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: blue;
+  }
+
+  main {
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr;
+
+  }
+
+  main h1,
+  h2,
+  h3 {
+    Font-size: 24px;
+    color: blue;
+    font-family: 'Exo', serif;
+  }
+
+  .sitelogo {
+    width: 100px;
+    margin: none;
+    border-style: none;
+    box-shadow: none;
+    float: left;
+    background-color: royalblue;
+  }
+
+  main>.main_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main>.main_content {
+    justify-content: left;
+  }
+
+  .main_content>ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_typography > h1{
+    Font-size: 2em;
+    color: blue;
+    font-family: 'Exo', serif;
+  }
+
+  .main_typography > h2{
+    Font-size: 1.5em;
+    color: blue;
+    font-family: 'Exo', serif;
+  }
+
+  .main_typography > h3{
+    Font-size: 1.2em;
+    color: blue;
+    font-family: 'Exo', serif;
+  }
+
+  .persona>ul,
+  .persona>p {
+    display: flex;
+    flex-direction: column;
+    border: .2rem;
+    padding: .2em;
+  }
+
+  img {
+    margin: 5px 5px 5px 5px;
+    border-style: solid;
+    width: 90%;
+    height: auto;
+  }
+
+  .logo {
+    width: 100px;
+    margin: none;
+    border-style: none;
+    box-shadow: none;
+    float: left;
+  }
+
+  p>img>.logo {
+    margin: 5px 5px 5px 5px;
+    border-style: solid;
+    width: 90%;
+    height: auto;
+  }
+
+
+  a {
+    margin: 0px 10px;
+    color: black;
+  }
+
+  #footerInfo>p>a {
+    color: whitesmoke;
+  }
+
+  p {
+    margin: .2em;
+    color: black;
+    padding: .1em;
+  }
+
+  #footerInfo>p {
+    color: whitesmoke;
+  }
+
+  #footer_link>a {
+    color: whitesmoke;
+  }
+
+  section {
+    margin: 4px;
+    border-color: black;
+    background-color: rgb(223, 223, 236);
+    text-align: left;
+  }
+
+  .colors {
+    width: auto;
+    /* min-width: 350px; */
+    margin: auto;
+    text-align: center;
+    display: flex;
+
+  }
+
+  .colors tbody {
+    flex-grow: 1;
+  }
+
+  .colors th {
+    background-color: #999;
+    color: #011936;
+  }
+
+  .colors td {
+    width: 25%;
+    height: 3em;
+    color: whitesmoke;
+  }
+
+  .primary {
+    /* background-color: #011936; */
+    background-color: var(--primary-color);
+  }
+
+  .secondary {
+    background-color: #465362;
+  }
+
+  .tertiary {
+    background-color: var(--tertiary-color);
+  }
+
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+
+  .accent2 {
+    background-color: var(--accent2-color);
+  }
+}

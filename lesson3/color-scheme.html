@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Weather Site Plan page for BYUI that contains color-scheme information">
+    <title>GitRDone Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman">
+    <link href="https://fonts.googleapis.com/css?family=Exo">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/site.js"></script>
+</head>
+
+<body onload="GetFileInfo()"">
+    <div class=" container">
+    <nav class="flex-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./target-audience.html">Target Audience</a></li>
+            <li><a href="./color-scheme.html">Color Scheme</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="logoheading">
+            <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+            <h1>GitRDone Weather</h1><br>
+            <h2>When you need to plan ahead</h2>
+        </div>
+    </header>
+    <main>
+        <h1 class="main_title">Color Scheme Information</h1>
+        <section class="main_content">
+            <h2>Color Scheme</h2>
+            <p></p>
+      
+            <p>Palette URL: <a href="https://coolors.co/011936-465362-82a3a1-9fc490-c0dfa1" target="_blank">https://coolors.co/011936-465362-82a3a1-9fc490-c0dfa1</a></p>
+      
+            <table class="colors">
+              <tr>
+                <th>Primary</th>
+                <th>Secondary</th>
+                <th>Tertiary</th>
+                <th>Accent 1</th>
+                <th>Accent 2</th>
+              </tr>
+              <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+              <tr>
+                <td class="primary">[#011936]</td>
+                <td class="secondary">[#465362]</td>
+                <td class="tertiary">[#82a3a1]</td>
+                <td class="accent1">[#9fc490]</td>
+                <td class="accent2">[#c0dfa1]</td>
+              </tr>
+            </table>
+          </section>
+    </main>
+    <footer>
+        <div id="footerInfo">
+            <p>&copy; <span id="year"></span> | Drew Parkinson | Oregon | <a id="footer_link"
+                    href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        </div>
+        <div>
+            <span id="updatedDate"></span>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
