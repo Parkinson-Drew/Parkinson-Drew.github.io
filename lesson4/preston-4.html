@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Weather Site page for BYUI">
+    <title>GitRDone Weather</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/site.js"></script>
+</head>
+
+<body onload="GetFileInfo()">
+    <div class="container">
+    <header>
+        <div class="logoheading">
+            <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+            <!-- Icon from iconFinder -->
+            <h1>GitRDone Weather</h1><br>
+            <h2>When you need to plan ahead</h2>
+        </div>
+    
+    </header>
+    <nav>
+        <ul class="flex-nav">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>        
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="maincontentbox">Hero w/ weather summary</div>
+        <div class="maincontentbox forecast">5 day forecast</div>
+        <div class="maincontentbox">Article</div>
+        <div class="maincontentbox">Contact information</div>
+    </main>
+    <footer>
+        <div id="footerInfo">
+            <p>&copy; GitRDone Weather <span id="year"></span> | Attributions | Drew Parkinson</p>
+        </div>
+        <div>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

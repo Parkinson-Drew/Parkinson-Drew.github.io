@@ -1,0 +1,223 @@
+/* WDD 230 - Assignment Portal CSS */
+
+/* * is a wildcard referring to all elements. */
+@media only screen and (min-width: 20em) {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+
+  body {
+    font-size: 18px;
+    font-family: 'Exo', serif;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  /* Navigation Bar */
+
+
+
+  .toggleNav {
+    display: block;
+    color: #8b8b8b;
+  }
+
+  .toggleNav:hover,
+  .toggleNav:focus {
+    color: #222;
+    text-decoration: none;
+  }
+
+  nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: darkblue;
+    border-radius: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .flex-nav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .flex-nav li:first-child {
+    display: block;
+  }
+
+  .flex-nav li {
+    display: none;
+  }
+
+  .flex-nav li {
+    display: none;
+  }
+
+  .flex-nav a {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+
+  .flex-nav a:hover {
+    color: white;
+    background-color: blue;
+  }
+
+  .responsive li {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 45px;
+    font-family: 'Tangerine', serif, cursive, Arial, Helvetica;
+    text-align: center;
+    color: whitesmoke;
+    margin: auto;
+  }
+
+  header h2,
+  h3 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
+  }
+
+  /* section h2, h3 {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        font-family: 'Tangerine', serif, Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    } */
+
+  header,
+  footer {
+    margin: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: blue;
+    /* background-color: rgb(113, 106, 114); */
+    color: whitesmoke;
+    padding: .5em;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: blue;
+  }
+
+  main {
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr;
+
+  }
+
+  main h1,
+  h2,
+  h3 {
+    Font-size: 24px;
+    color: blue;
+    font-family: 'Exo', serif;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+  .sitelogo {
+    width: 100px;
+    border-style: none;
+    box-shadow: none;
+    float: left;
+    background-color: royalblue;
+  }
+
+  .maincontentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    background-color: #eee;
+    color: #444;
+    font-style: italic;
+  }
+
+
+  main>.main_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main>.main_content {
+    justify-content: left;
+  }
+
+  .main_content>ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin: 5px 5px 5px 5px;
+    border-style: solid;
+    width: 90%;
+    height: auto;
+  }
+
+  .logo {
+    width: 100px;
+    border-style: none;
+    box-shadow: none;
+    float: left;
+  }
+
+  p>img>.logo {
+    margin: 5px 5px 5px 5px;
+    border-style: solid;
+    width: 90%;
+    height: auto;
+  }
+
+
+  #footerInfo>p>a {
+    color: whitesmoke;
+  }
+
+  p {
+    margin: .2em;
+    color: black;
+    padding: .1em;
+  }
+
+  #footerInfo>p {
+    color: whitesmoke;
+  }
+
+  #footer_link>a {
+    color: whitesmoke;
+  }
+
+  section {
+    margin: 4px;
+    border-color: black;
+    background-color: rgb(223, 223, 236);
+    text-align: left;
+  }
+
+
+}

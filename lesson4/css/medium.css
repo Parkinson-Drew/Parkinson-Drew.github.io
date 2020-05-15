@@ -1,0 +1,61 @@
+@media only screen and (min-width: 36em) {
+  h1 {
+    font-size: 65px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  img {
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px grey;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0;
+  }
+
+  header,
+  footer {
+    border-radius: 10px;
+  }
+	.flex-nav {
+		display: flex;
+		text-align: center;
+		padding-bottom: .2em;
+		border-bottom: 1px solid #e2e2e2;
+	}
+
+	.flex-nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.flex-nav a {
+		text-align: center;
+	}
+
+	.flex-nav li:first-child {
+		display: none;
+	}
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+
+
+  /* nav ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  } */
+
+  p {
+    padding: .2em;
+  }
+}
