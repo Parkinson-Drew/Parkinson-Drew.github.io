@@ -2,12 +2,12 @@
 
 /* * is a wildcard referring to all elements. */
 @media only screen and (min-width: 20em) {
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2em;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+  }
 
   body {
     font-size: 18px;
@@ -30,14 +30,30 @@
 
   .toggleNav:hover,
   .toggleNav:focus {
-    color: #222;
+    color: #82a3a1;
     text-decoration: none;
   }
 
   nav {
     margin: 0 auto;
     max-width: 760px;
-    background-color: darkblue;
+    background-color: #465362;
+    border-radius: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  nav .hover {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #c0dfa1;
+    border-radius: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  nav .active {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #82a3a1;
     border-radius: 10px;
     border-bottom: 1px solid #e2e2e2;
   }
@@ -71,8 +87,13 @@
   }
 
   .flex-nav a:hover {
-    color: white;
-    background-color: blue;
+    color: #465362;
+    background-color: #c0dfa1;
+  }
+
+  .flex-nav a:active {
+    color: #465362;
+    background-color: #82a3a1;
   }
 
   .responsive li {
@@ -107,7 +128,7 @@
     margin: .5rem;
     border-radius: 10px;
     text-align: center;
-    background-color: blue;
+    background-color: #82a3a1;
     /* background-color: rgb(113, 106, 114); */
     color: whitesmoke;
     padding: .5em;
@@ -115,7 +136,7 @@
 
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: blue;
+    background-color: #82a3a1;
   }
 
   main {
@@ -132,13 +153,14 @@
   h2,
   h3 {
     Font-size: 24px;
-    color: blue;
+    color: #011936;
     font-family: 'Exo', serif;
   }
 
   main h2 {
     text-align: center;
   }
+
   .sitelogo {
     width: 100px;
     border-style: none;
@@ -149,7 +171,10 @@
 
   .maincontentbox {
     display: block;
-    margin: 10px auto;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
     border: 1px dashed #000;
     background-color: #eee;
     color: #444;
@@ -217,6 +242,14 @@
     border-color: black;
     background-color: rgb(223, 223, 236);
     text-align: left;
+  }
+
+  figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
   }
 
 

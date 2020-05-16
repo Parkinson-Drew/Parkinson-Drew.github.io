@@ -24,27 +24,35 @@
   footer {
     border-radius: 10px;
   }
-	.flex-nav {
-		display: flex;
-		text-align: center;
-		padding-bottom: .2em;
-		border-bottom: 1px solid #e2e2e2;
-	}
 
-	.flex-nav li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
+  .flex-nav {
+    display: flex;
+    text-align: center;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #e2e2e2;
+  }
 
-	.flex-nav a {
-		text-align: center;
-	}
+  .flex-nav li {
+    display: block;
+    /* change state in small view */
+    flex: 1 1 auto;
+  }
 
-	.flex-nav li:first-child {
-		display: none;
-	}
+  .flex-nav a {
+    text-align: center;
+  }
+
+  .flex-nav li:first-child {
+    display: none;
+  }
+
   main {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .maincontentbox {
+    line-height: 55px;
+
   }
 
 

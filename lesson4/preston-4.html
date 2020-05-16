@@ -20,41 +20,61 @@
 
 <body onload="GetFileInfo()">
     <div class="container">
-    <header>
-        <div class="logoheading">
-            <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
-            <!-- Icon from iconFinder -->
-            <h1>GitRDone Weather</h1><br>
-            <h2>When you need to plan ahead</h2>
+        <header>
+            <div class="logoheading">
+                <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+                <!-- Icon from iconFinder -->
+                <h1>GitRDone Weather</h1><br>
+                <h2>When you need to plan ahead</h2>
+            </div>
+
+        </header>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-4.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <!--<div class="container"></div>
+            <figure class="prestonphoto">
+                <img src="lesson4/images/prestonS.jpg" alt="Preston Small Photo" sizes="100w" srcset="images/prestonL.jpg 976 w, images/prestonM.jpg 800w, images/prestonS 600w">
+            </figure>-->
+            <div class="maincontentbox">Hero w/ weather summary</div>
+
+
+
+            <div class="maincontentbox forecast">5 day forecast</div>
+            <div class="maincontentbox">Article</div>
+            <!--<article>
+        <div class="PrestonArticle">
+            <h2>Visit Scenic Preston</h2>
+            <h2>by Drew Parkinson</h2>
+            <div class="PrestonWeekly">
+                <img src="lesson4/images/scenic.jpg" alt="ArticlePhoto"
+                <h6>"Preston has beautiful winding country roads that meander through the 
+                    hillsides.  In the autumn, you can catch the changing leaf colors.  In
+                    the winter you can enjoy the slopes."</h6>
+            </div>
         </div>
-    
-    </header>
-    <nav>
-        <ul class="flex-nav">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="preston-4.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
-    </nav>        
-    <main>
-        <h2>Preston Idaho</h2>
-        <div class="maincontentbox">Hero w/ weather summary</div>
-        <div class="maincontentbox forecast">5 day forecast</div>
-        <div class="maincontentbox">Article</div>
-        <div class="maincontentbox">Contact information</div>
-    </main>
-    <footer>
-        <div id="footerInfo">
-            <p>&copy; GitRDone Weather <span id="year"></span> | Attributions | Drew Parkinson</p>
-        </div>
-        <div>
-            <span id="currentDate"></span>
-        </div>
-    </footer>
+    </article>-->
+
+            <div class="maincontentbox">Contact information</div>
+        </main>
+        <footer>
+            <div id="footerInfo">
+                <p>&copy; GitRDone Weather <span id="year"></span> | Attributions | Drew Parkinson</p>
+            </div>
+            <div>
+                <span id="currentDate"></span>
+            </div>
+        </footer>
     </div>
 </body>
 
