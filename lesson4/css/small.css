@@ -100,6 +100,13 @@
     display: block;
   }
 
+  .headingtext {
+    display: flex;
+    flex-direction:  column;
+    ;
+    background-color: #82a3a1;
+  }
+
   header h1 {
     font-size: 65px;
     font-family: 'Tangerine', serif, cursive, Arial, Helvetica;
@@ -115,13 +122,10 @@
     font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
   }
 
-  /* section h2, h3 {
-        font-size: 1.5rem;
-        color: whitesmoke;
-        font-family: 'Tangerine', serif, Arial, Helvetica, sans-serif;
-        margin-top: 30px;
-        padding-bottom: 20px;
-    } */
+  .byline {
+    margin-left: 20px;
+    text-align: center;
+  }
 
   header,
   footer {
