@@ -38,6 +38,11 @@
     flex: 1 1 auto;
   }
 
+  nav .active {
+    background-color: #82a3a1;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
   .flex-nav a {
     text-align: center;
   }
