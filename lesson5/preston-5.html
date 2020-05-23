@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Weather Site page for BYUI">
+    <title>GitRDone Weather</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+</head>
+
+<body onload="GetFileInfo()">
+    <div class="container">        
+        <div id="banner">Saturday = Preston Pancakes in the Park! <br>
+            9:00 a.m. Saturday at the city park pavilion.</div>
+        <header>
+            <div class="logoheading">
+                <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+                <!-- Icon from iconFinder -->
+                <section class="headingtext">
+                    <h1>GitRDone Weather</h1><br>
+                    <div class="byline">
+                        <h2>When you need to plan ahead</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="./preston-4.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="herobanner">
+                <img class="herobanner-image" src="./images/prestonS.jpg" alt="Preston Small Photo" sizes="120w"
+                    srcset="images/prestonL.jpg 1050w, images/prestonM.jpg 900w, images/prestonS 600w">
+                <section class="weather-summary">
+                    <h3 class="weather-title">Weather Summary</h3>
+                    <p>Currently: <span>Empty</span></p>
+                    <p>Temperature: <span>Empty</span></p>
+                    <p>Humidity: <span>Empty</span></p>
+                    <p>Precipitation: <span>Empty</span></p>
+                    <p>Wind Speed: <span>Empty</span></p>
+                </section>
+            </div>
+
+            <div class="maincontentbox">
+            <div class="big forecast">
+                <h3>5 Day Forecast</h3>
+                <p>Monday</p>
+                <img src="images/weatherconditions/cloudy192.png" alt="cloudy">
+                <p>Tuesday</p>
+                <img src="images/weatherconditions/snow192.png" alt="snowy">
+                <p>Wednesday</p>
+                <img src="images/weatherconditions/sun192.png" alt="sunny">
+                <p>Thursday</p>
+                <img src="images/weatherconditions/thunderstorm192.png" alt="thunderstorm">
+                <p>Friday</p>
+                <img src="images/weatherconditions/partlycloudy192.png" alt="partlyc cloudy">
+
+            </div>
+        </div>
+            <article>
+                <div class="article-text">
+                    <h3 class="article-title">Visit Scenic Preston</h3>
+                    <h4 class="article-author">by Drew Parkinson</h4>
+                    <img src="./images/scenic.jpg" alt="ArticlePhoto">  
+                    <p>Preston has beautiful winding
+                        country roads that meander through the
+                        hillsides. In the autumn, you can catch the changing leaf colors. In
+                        the winter you can enjoy the slopes.
+                        A walk through the splendid fall leaves of Preston will certainly bring some pink to your
+                        cheeks! Take time this weekend to
+                        explore the great outdoors with friends and family. Be sure to stop by the Preston Farmers
+                        Market. In December the market will
+                        switch to a Christmas market featuring wares from vendors state-wide.</p>
+                                      </div>
+
+            </article>
+
+        </main>
+        <footer>
+            <div class="footer-top">
+
+                <div class="footer-contact">
+                  <div class="footer-address">
+                    <p class="contact-address-title">GitRDone Weather</p>
+                    <p class="contact-address">30 N 1st E</p>
+                    <p class="contact-address">Preston, ID 83263</p>
+                  </div>
+                  
+                  <div class="footer-communication">
+                    <p class="communication-phonenumber"><span class="entity-contact">&#9742;</span>&#160; 208-555-1234</p>
+                    <p class="communication-mail"><span class="entity-contact"> &#9993; </span>gitrdone@forecast.com</p>
+                  </div>
+          
+                  <div class="footer-social">
+                    <a class="anchor-socialmedia" href="https://www.facebook.com">
+                      <img class="logo-social" src="./images/socialmedia/facebook.png" alt="Facebook social media link and logo."></a>
+                    <a class="anchor-socialmedia" href="https://www.pinterest.com">
+                      <img class="logo-social" src="./images/socialmedia/pinterest.png" alt="Pinterest social media link and logo."></a>
+                    <a class="anchor-socialmedia" href="https://twitter.com">
+                      <img class="logo-social" src="./images/socialmedia/twitter.png" alt="Twitter social media link and logo."></a>
+                    <a class="anchor-socialmedia" href="https://www.instagram.com">
+                      <img class="logo-social" src="./images/socialmedia/intagram.png" alt="WhatsApp social media link and logo."></a>
+                  </div>
+                </div>
+          
+                <div class="footer-top-map">                  
+                  <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47362.53090283427!2d-111.91459278032606!3d42.104082954123314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590225190303!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              </div>            
+            <div id="footerInfo">
+                <p>&copy; GitRDone Weather <span id="year"></span> | Attributions | Drew Parkinson</p>
+            </div>
+            <div>
+                <span id="currentDate"></span>
+            </div>
+        </footer>
+    </div>
+    <script>displayBanner()</script>
+</body>
+
+</html>
