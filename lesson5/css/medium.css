@@ -99,7 +99,7 @@
     margin: 5px 0px;
   }
 
-  .forecast p {
+  .forecast h4 {
     font-size: 1.7rem;
     grid-row: 2;
     margin: 0px;
