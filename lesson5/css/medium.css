@@ -97,6 +97,7 @@
     grid-column: 1/6;
     font-size: 2rem;
     margin: 5px 0px;
+    color: white;
   }
 
   .forecast h4 {

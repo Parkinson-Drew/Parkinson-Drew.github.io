@@ -175,7 +175,7 @@
     text-align: center;
     background-color: #82a3a1;
     /* background-color: rgb(113, 106, 114); */
-    color: whitesmoke;
+    color: black;
     padding: .5em;
   }
 
@@ -270,7 +270,7 @@
   }
 
   #footerInfo>p {
-    color: whitesmoke;
+    color: black;
   }
 
   #footer_link>a {
@@ -292,9 +292,9 @@
   box-sizing: border-box;
 }
 
-.footer-address > p:first-child {
+/* .footer-address > p:first-child {
   font-weight: bolder;
-}
+} */
 
 .footer-address > p {
   margin: 0;
