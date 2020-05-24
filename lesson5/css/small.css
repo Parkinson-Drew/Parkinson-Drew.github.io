@@ -277,17 +277,17 @@
     color: whitesmoke;
   }
 /* FOOTER TOP */
-.footer-top {
+.footer-town {
   display: flex;
   flex-direction: column;
 }
 
-.footer-top p {
+.footer-town p {
   text-align: center;
 }
 
 /* FOOTER CONTACT */
-.footer-contact {
+.footer-contacts {
   width: 100%;
   box-sizing: border-box;
 }
@@ -300,11 +300,11 @@
   margin: 0;
 }
 
-.footer-communication > p:first-child {
+.footer-comms > p:first-child {
   margin-top: 1em;
 }
 
-.footer-communication > p {
+.footer-comms > p {
   margin: 0;
 }
 
@@ -313,13 +313,13 @@
 }
 
 /* SOCIAL MEDIA */
-.footer-social { 
+.footer-socialmedia { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 1em 0;
 }
 
-.footer-social a {
+.footer-socialmedia a {
   display: grid;
 }
 
@@ -329,15 +329,12 @@
   max-width: 60px;
 }
 
-/* FOOTER MAP */
-.footer-map-container {
-  flex: 2;
-  order: 1;
-}
 
 /* FOOTER MAP */
-.footer-top-map {
+.footer-town-map {
+  flex: 0;
   margin: 1em 0;
+  display: none;
 }
 
 .footer-map {

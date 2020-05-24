@@ -112,22 +112,19 @@
   }
 
   /* FOOTER TOP */
-  .footer-top {
-    display: flex;
+  .footer-town {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
   }
-
-  .footer-map-container {
+ 
+  .footer-town-map {
     flex: 2;
     order: 1;
+    display: flex;
   }
 
-  .footer-map {
-    width: 100%;
-  }
-  .footer-top-contact {
+  .footer-contacts {
     flex: 1;
     order: 2;
     flex-direction: row;
