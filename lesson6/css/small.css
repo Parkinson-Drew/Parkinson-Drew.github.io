@@ -1,0 +1,379 @@
+/* WDD 230 - Assignment Portal CSS */
+
+/* * is a wildcard referring to all elements. */
+@media only screen and (min-width: 20em) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+  }
+
+  body {
+    font-size: 18px;
+    font-family: 'Exo', serif;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  /* Navigation Bar */
+
+
+
+  .toggleNav {
+    display: block;
+    color: #8b8b8b;
+  }
+
+  .toggleNav:hover,
+  .toggleNav:focus {
+    color: #82a3a1;
+    text-decoration: none;
+  }
+
+  nav {
+    margin: 0.5rem;
+    max-width: 100%;
+    background-color: #465362;
+    border-radius: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  nav .hover {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #c0dfa1;
+    border-radius: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  nav .active {
+    margin: 0 auto;
+    color: #011936;
+    max-width: 760px;
+    background-color: #82a3a1;
+
+  }
+
+  .flex-nav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .flex-nav li:first-child {
+    display: block;
+  }
+
+  .flex-nav li {
+    display: none;
+  }
+
+  .flex-nav a {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+
+  .flex-nav a:hover {
+    color: #465362;
+    background-color: lightslategray;
+  }
+
+  .flex-nav a:active {
+    color: black;
+    background-color: radial-gradient(#82a3a1, #465362);
+  }
+
+  .flex-nav> .active> a {
+    color: black;
+  }
+
+  .responsive li {
+    display: block;
+  }
+
+  .headingtext {
+    display: flex;
+    flex-direction: column;
+    ;
+    background-color: #82a3a1;
+  }
+
+  #banner {
+    display: block;
+    background-color: #82a3a1;
+    color: black;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .herobanner {
+    position: relative;
+    left: 2.5rem;
+    /* margin: 10px auto; */
+  }
+
+  .weather-summary {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: radial-gradient(#82a3a1, #465362);
+    padding-bottom: 4px;
+    margin-bottom: auto;
+  }
+
+  /*------------ARTICLE---------------*/
+
+  article {
+    padding-top: 10px;
+    margin-top: auto;
+  }
+  .article-title {
+    padding-top: 5px;
+    font-size: 1.3em;
+    margin: 8px 0px -15px 8px;
+    padding-bottom: 2px;
+  }
+
+  .article-author {
+    font-size: 1em;
+    padding: 2px 2px 5px;
+    margin: 8px 0px 5px 8px;
+  }
+
+  .article-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-text img {
+    display: flex;
+    order: 2;
+    width: 400px;
+    align-content: flex-end;
+  }
+
+  header h1 {
+    font-size: 65px;
+    font-family: 'Tangerine', serif, cursive, Arial, Helvetica;
+    text-align: center;
+    color: #011936;
+    margin: auto;
+  }
+
+  header h2,
+  h3 {
+    font-size: 1.5rem;
+    color: #011936;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
+  }
+
+  .byline {
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  header,
+  footer {
+    margin: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #82a3a1;
+    /* background-color: rgb(113, 106, 114); */
+    color: black;
+    padding: .5em;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #82a3a1;
+  }
+
+  main {
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr;
+
+  }
+
+  main h1,
+  h2,
+  h3 {
+    Font-size: 24px;
+    color: #011936;
+    font-family: 'Exo', serif;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+
+  .sitelogo {
+    width: 100px;
+    border-style: none;
+    box-shadow: none;
+    float: left;
+  }
+
+  .maincontentbox {
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    font-style: italic;
+  }
+
+
+  main>.main_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main>.main_content {
+    justify-content: left;
+  }
+
+  .main_content>ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin: 5px 5px 5px 5px;
+    border-style: none;
+    width: 90%;
+  }
+
+  .logo {
+    width: 100px;
+    border-style: none;
+    box-shadow: none;
+    float: left;
+  }
+
+  p>img>.logo {
+    margin: 5px 5px 5px 5px;
+    border-style: solid;
+    width: 90%;
+    height: auto;
+  }
+
+
+  #footerInfo>p>a {
+    color: whitesmoke;
+  }
+
+  p {
+    margin: .2em;
+    color: black;
+    padding: .1em;
+  }
+
+  #footerInfo>p {
+    color: black;
+  }
+
+  #footer_link>a {
+    color: whitesmoke;
+  }
+
+  /* FOOTER TOP */
+  .footer-town {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-town p {
+    text-align: center;
+  }
+
+  /* FOOTER CONTACT */
+  .footer-contacts {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* .footer-address > p:first-child {
+  font-weight: bolder;
+} */
+
+  .footer-address>p {
+    margin: 0;
+  }
+
+  .footer-comms>p:first-child {
+    margin-top: 1em;
+  }
+
+  .footer-comms>p {
+    margin: 0;
+  }
+
+  .entity-contact {
+    font-size: 1.5em;
+  }
+
+  /* SOCIAL MEDIA */
+  .footer-socialmedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1em 0;
+  }
+
+  .footer-socialmedia a {
+    display: grid;
+  }
+
+  .logo-social {
+    justify-self: center;
+    margin: auto;
+    max-width: 60px;
+  }
+
+
+  /* FOOTER MAP */
+  .footer-town-map {
+    flex: 0;
+    margin: 1em 0;
+    display: none;
+  }
+
+  .footer-map {
+    width: 100%;
+  }
+
+  section {
+    margin: 4px;
+    border-color: black;
+    background-color: rgb(223, 223, 236);
+    text-align: left;
+  }
+
+  figure {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px; */
+  }
+
+  /*-----------RESPONSIVE--------------*/
+  .big {
+    display: none;
+  }
+
+}
