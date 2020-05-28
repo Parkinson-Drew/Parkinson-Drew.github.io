@@ -16,7 +16,7 @@ function GetFileInfo() {
     let current_month = myDate.getMonth();
     let current_day = myDate.getDay();
     let current_year = myDate.getFullYear();
-    message = (day_names[current_day] + ", " + current_day + " " + month_names[current_month] + " " + current_year);
+    message = (day_names[current_day] + ", " + current_date + " " + month_names[current_month] + " " + current_year);
 
     let date = new Date();
     let currYear = document.getElementById("currentDate");
