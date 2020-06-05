@@ -18,6 +18,10 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;	
 	} */
 
+	picture > img:hover {
+		box-shadow: 0 0 50px #333;
+	}
+
 	p {
 		padding: .4em;
 	}
