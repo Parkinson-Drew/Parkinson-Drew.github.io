@@ -92,7 +92,7 @@
 
   .flex-nav a:active {
     color: black;
-    background-color: radial-gradient(#82a3a1, #465362);
+    background: radial-gradient(#82a3a1, #465362);
   }
 
   .flex-nav>.active>a {
