@@ -53,6 +53,10 @@ tbody tr:nth-child(even) {
     font-size: 25px;
 }
 
+.useitalic {
+    font-style: italic;
+}
+
 .tableheader {
     background-color: #628ca6;
     color: white;
