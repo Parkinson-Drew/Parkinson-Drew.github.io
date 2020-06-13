@@ -30,3 +30,8 @@ function toggleMenu() {
         .classList.toggle("responsive");
 
 }
+
+//Updates slider
+function updateRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+  }
