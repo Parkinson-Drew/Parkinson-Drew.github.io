@@ -46,49 +46,55 @@
         <main>
             <h2>Storm Center</h2>
             <section class="stormCenter">
-              <form method="GET" action="thanks.html">
-                <fieldset>
-                  <legend>Contact Information</legend>
-                  <label class="top">Full Name <input type="text" name="fullName" required pattern="[A-z\s]{5,}" placeholder="First Last"></label>
-                  <label class="top">Email <input type="email" name="email" placeholder="someone@domain.com"></label>
-                  <label class="top">Phone <input type="tel" name="phone" required placeholder="###-###-####"></label>
-                  <label class="top">Zip <input type="text" name="zip" required pattern="^(?<area>([\d]{5})[-][\d]{4})|([\d]{5})"></label>
-                </fieldset>
-                <fieldset>
-                  <legend>Storm Details</legend>
-                  <label class="top">Storm Date <input type="date" name="stormDate"></label>  
-                  <label class="top">Storm Type <input type="text" name="stormType" list="stormlist">
-                    <datalist id="stormlist">
-                      <option value="Flash Flood"></option>
-                      <option value="Hail"></option>
-                      <option value="Hurricane"></option>
-                      <option value="Thunderstorm"></option>
-                      <option value="Tornado"></option>
-                    </datalist>
-                  </label>
-                  <label class="top" for="severity">Storm Severity: <span id="ratingvalue">5</span></label>
+                <form method="GET" action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label class="top">Full Name <input type="text" name="fullName" required pattern="[A-z\s]{5,}"
+                                placeholder="First Last"></label>
+                        <label class="top">Email <input type="email" name="email"
+                                placeholder="someone@domain.com"></label>
+                        <label class="top">Phone <input type="tel" name="phone" required
+                                placeholder="###-###-####"></label>
+                        <label class="top">Zip <input type="text" name="zip" required
+                                pattern="^(?<area>([\d]{5})[-][\d]{4})|([\d]{5})"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Storm Details</legend>
+                        <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                        <label class="top">Storm Type <input type="text" name="stormType" list="stormlist">
+                            <datalist id="stormlist">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label class="top" for="severity">Storm Severity: <span id="ratingvalue">5</span></label>
 
-                  <input name="severity" id="severity" type="range" value="5" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                  <label class="top">Storm Region
-                    <select name="stormRegion">
-                      <option value="">Select Region</option>
-                      <option value="preston">Preston</option>
-                      <option value="sodasprings">Soda Springs</option>
-                      <option value="fishhaven">Fish Haven</option>
-                    </select>
-                  </label>
-                  <div class="sbs danger"><label class="dangertitle">Danger?</label>
-                    <label><input name="danger" type="radio" value="yes">Yes</label>
-                    <label><input name="danger" type="radio" value="maybe">Maybe</label>
-                    <label><input name="danger" type="radio" value="no">No</label>
-                </div>
-                <label class="top" for="info">Additional Information:</label>
-                    <textarea name="info" id="info"></textarea>
-                </fieldset>
-                <button type="submit" class="submitButton" value="Report Storm">Report Storm</button>
-        
-        
-              </form> 
+                        <input name="severity" id="severity" type="range" value="5" min="1" max="10"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <label class="top">Storm Region
+                            <select name="stormRegion">
+                                <option value="">Select Region</option>
+                                <option value="preston">Preston</option>
+                                <option value="sodasprings">Soda Springs</option>
+                                <option value="fishhaven">Fish Haven</option>
+                            </select>
+                        </label>
+                        <div class="sbs danger"><label class="dangertitle">Danger?
+                                <label><input name="danger" type="radio" value="yes">Yes</label>
+                                <label><input name="danger" type="radio" value="maybe">Maybe</label>
+                                <label><input name="danger" type="radio" value="no">No</label>
+                            </label>
+                        </div>
+                        <label class="top" for="info">Additional Information:</label>
+                        <textarea name="info" id="info"></textarea>
+                    </fieldset>
+                    <button type="submit" class="submitButton" value="Report Storm">Report Storm</button>
+
+
+                </form>
             </section>
         </main>
         <footer>
