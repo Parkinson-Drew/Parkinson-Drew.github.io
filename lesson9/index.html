@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="WDD 230 Weather Site page for BYUI">
+    <meta name="description" content="WDD 230 Weather Site Home page for BYUI">
     <title>GitRDone Weather</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <script src="js/jsonTowns.js"></script>
+    <script src="js/jsonTowns.js"></script>   
     <script src="js/site.js"></script>
-    <script src="js/banner.js"></script>
 </head>
 
-<body onload="getHomePageData()">
+<body onload="GetFileInfo()">
     <div class="container">
-        <div id="banner">Saturday = Preston Pancakes in the Park! <br>
-            9:00 a.m. Saturday at the city park pavilion.</div>
         <header>
             <div class="logoheading">
                 <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
@@ -82,12 +79,11 @@
             </div>
         </footer>
     </div>
-    <script>
-        displayBanner()
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <!-- <script src="js/windchill.js"></script> -->
+    <script>
+        getHomePageData()
+    </script>
 </body>
 
 </html>
