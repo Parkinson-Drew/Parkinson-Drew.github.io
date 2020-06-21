@@ -56,7 +56,7 @@
 
   nav .active {
     background-color: #82a3a1;
-    color:black;
+    color: black;
     border-bottom: 1px solid #e2e2e2;
   }
 
@@ -128,9 +128,10 @@
     display: flex;
   }
 
-  .footer-town-map > img {
-    width: 450px;  
+  .footer-town-map>img {
+    width: 450px;
   }
+
   .footer-contacts {
     flex: 1;
     order: 2;
@@ -142,15 +143,53 @@
     padding: .2em;
   }
 
- /*------------Home Page--------------*/
-  section.towninfocards {display: grid; grid-template-columns: repeat(1, 1fr);}
-  section.towninfocards article{display: grid; grid-template-columns: repeat(2, 1fr);}
+  /*------------Home Page--------------*/
+  section.towninfocards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-  section.towninfocards article:nth-child(odd) img{grid-column: 1/2; grid-row: 1/6; align-self: center; justify-self: center;}
-  section.towninfocards article:nth-child(even) img{grid-column: 2/3; grid-row: 1/6; align-self: center; justify-self: center;}
+  section.towninfocards article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  section.mainarticle{display: grid; grid-template-columns: 30% auto; grid-gap: 5px;}
-  section.mainarticle img{grid-row: 1/4; grid-column: 1/2;}
-  section.mainarticle h2{grid-row: 1/2; padding: 0 0 0 3px; margin: 0; font-family: 'Patrick Hand', 'Crete Round', serif, Arial, Helvetica, sans-serif;}
-  section.mainarticle p{grid-row: 2/4;padding: 0px 0 0 0; margin: 0; justify-self: left;}  
+  section.towninfocards article:nth-child(odd) img {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    align-self: center;
+    justify-self: center;
+  }
+
+  section.towninfocards article:nth-child(even) img {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    align-self: center;
+    justify-self: center;
+  }
+
+  section.mainarticle {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 5px;
+  }
+
+  section.mainarticle img {
+    grid-row: 1/4;
+    grid-column: 1/2;
+  }
+
+  section.mainarticle h2 {
+    grid-row: 1/2;
+    padding: 0 0 0 3px;
+    margin: 0;
+    font-family: 'Patrick Hand', 'Crete Round', serif, Arial, Helvetica, sans-serif;
+  }
+
+  section.mainarticle p {
+    grid-row: 2/4;
+    padding: 0px 0 0 0;
+    margin: 0;
+    justify-self: left;
+  }
 }

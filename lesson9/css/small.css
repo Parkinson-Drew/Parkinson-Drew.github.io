@@ -483,7 +483,7 @@
   }
 
   main h1 {
-    font-family: 'Patrick Hand', 'Crete Round', serif, Arial, Helvetica, sans-serif;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
     font-size: 2.5em;
   }
 
@@ -509,7 +509,7 @@
   }
 
   section.towninfocards article h2 {
-    font-family: 'Patrick Hand', 'Crete Round', serif, Arial, Helvetica, sans-serif;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 2em;
@@ -517,7 +517,7 @@
   }
 
   section.towninfocards article h3 {
-    font-family: 'Patrick Hand', 'Crete Round', serif, Arial, Helvetica, sans-serif;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -525,7 +525,7 @@
   }
 
   section.towninfocards article p {
-    font-family: 'Patrick Hand', 'Crete Round', serif, Arial, Helvetica, sans-serif;
+    font-family: 'Exo', cursive, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1.5em;
@@ -557,7 +557,7 @@
     width: 100%;
     text-align: center;
     padding-bottom: 15px;
-    font-family: 'Jost', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 }
