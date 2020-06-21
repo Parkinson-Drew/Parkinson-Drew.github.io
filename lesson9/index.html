@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Weather Site page for BYUI">
+    <title>GitRDone Weather</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/jsonTowns.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+</head>
+
+<body onload="getHomePageData()">
+    <div class="container">
+        <div id="banner">Saturday = Preston Pancakes in the Park! <br>
+            9:00 a.m. Saturday at the city park pavilion.</div>
+        <header>
+            <div class="logoheading">
+                <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+                <!-- Icon from iconFinder -->
+                <section class="headingtext">
+                    <h1>GitRDone Weather</h1><br>
+                    <div class="byline">
+                        <h2>When you need to plan ahead</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="./preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Welcome</h2>
+
+            <article>
+                <div class="article-text">
+                    <h3 class="article-title">Visit Scenic Towns of Idaho</h3>
+                    <!-- <h4 class="article-author">by Drew Parkinson</h4> -->
+                    <img src="./images/scenic.jpg" alt="ArticlePhoto">
+                    <p>Come explore our some of our favorite towns of Idaho. Wander
+                        country roads that meander through the
+                        hillsides and see what treasures await. In the autumn, explore the beauttiful changing leaf
+                        colors found throughout our countryside. In
+                        the winter you can enjoy the slopes of beautiful white snow.
+                        Take time this weekend to
+                        explore one of our towns with friends and family. Be sure to explore what makes each of our
+                        towns so unique.</p>
+                </div>
+
+            </article>
+            <section class="towninfocards">
+
+            </section>
+            <div id="wireframes">
+                <p>Wireframes:</p>
+                <a href="images/wireframes/wireframe-small.jpg">Small</a>
+                <a href="images/wireframes/wireframe-medium.jpg">Medium</a>
+                <a href="images/wireframes/wireframe-large.jpg">Large</a>
+                
+
+            </div>
+        </main>
+        <footer>
+            <div id="footerInfo">
+                <p>&copy; GitRDone Weather <span id="year"></span> | Attributions | Drew Parkinson</p>
+            </div>
+            <div>
+                <span id="currentDate"></span>
+            </div>
+        </footer>
+    </div>
+    <script>
+        displayBanner()
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <!-- <script src="js/windchill.js"></script> -->
+</body>
+
+</html>

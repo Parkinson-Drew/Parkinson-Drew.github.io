@@ -1,0 +1,63 @@
+@media only screen and (min-width: 64em) {
+	h1 {
+		font-weight: 800;
+	}
+
+	h2 {
+		font-size: 2.0rem;
+		font-weight: 600;
+	}
+
+
+
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	/* nav ul {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	} */
+
+	p {
+		padding: .4em;
+	}
+
+	/*------------Home Page--------------*/
+	section.towninfocards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+
+	section.towninfocards article {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		padding-top: unset;
+		margin: 40px 0;
+	}
+
+	section.towninfocards article img {
+		align-self: center;
+		justify-self: center;
+		margin-top: 1em;
+		width: 100%;
+	}
+
+	section.towninfocards article h3 {
+		padding-bottom: 1em;
+	}
+
+	section.towninfocards article:nth-child(odd) img {
+		grid-column: 1/1;
+		grid-row: initial;
+		align-self: center;
+		justify-self: center;
+	}
+
+	section.towninfocards article:nth-child(even) img {
+		grid-column: 1/1;
+		grid-row: initial;
+		align-self: center;
+		justify-self: center;
+	}
+}
