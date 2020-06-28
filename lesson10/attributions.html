@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Weather Site Attributions page for BYUI">
+    <title>GitRDone Weather</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/site.js"></script>
+</head>
+
+<body onload="GetFileInfo()">
+    <div class="container">
+        <header>
+            <div class="logoheading">
+                <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
+                <!-- Icon from iconFinder -->
+                <section class="headingtext">
+                    <h1>GitRDone Weather</h1><br>
+                    <div class="byline">
+                        <h2>When you need to plan ahead</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="active"><a href="../lesson9/index.html">Home</a></li>
+                <li><a href="../lesson10/preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Attribution websites</h2>
+
+            <article>
+
+            </article>
+            <div id="wireframes">
+                <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a>
+            </div>
+        </main>
+        <footer>
+            <div id="footerInfo">
+                <p>&copy; GitRDone Weather <span id="year"></span> | <a
+                    href="../lesson10/attributions.html">Attributions</a> | Drew Parkinson</p>
+            </div>
+            <div>
+                <span id="currentDate"></span>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+
+</html>
