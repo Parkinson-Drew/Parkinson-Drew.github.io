@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Picture gallery for WDD 230 Weather Site page for BYUI">
+    <meta name="description" content="WDD 230 Weather Site page for BYUI">
     <title>GitRDone Weather</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -36,84 +36,68 @@
             <ul class="flex-nav">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="../lesson9/index.html">Home</a></li>
-                <li><a href="../lesson10/preston-10.html">Preston</a></li>
+                <li class="active"><a href="./preston-10.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-                <li class="active"><a href="gallery-7.html">Gallery</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Weather Gallery</h2>
-            <div class="imagegallery">
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/clearskies.jpg"
-                            alt="Image showing a clear sky by a bay bridge">
-                        <figcaption>Clear skies by the bay</figcaption>
-                    </figure>
-                    <!-- <p>Clear skies by the bay</p> -->
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/impendingstorm.jpg"
-                            alt="Image showing an impending storm">
-                        <figcaption>Impending rain storm</figcaption>
-                    </figure>
+            <h2>Preston Idaho</h2>
+            <div class="herobanner">
+                <picture>
+                    <source srcset="./images/prestonM.jpg" media="(min-width:425px) and (max-width: 799px)">
+                    <source srcset="./images/prestonL.jpg" media="(min-width: 800px)">
+                    <img class="herobanner-image" src="./images/prestonS.jpg" alt="Preston Town Photo">
+                </picture>
 
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/lightningbolt.jpg"
-                            alt="Image showing lightning strikes">
-                        <figcaption>Lightning ahead</figcaption>
-                    </figure>
-
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/rainyspring.jpg"
-                            alt="Image showing a rainy spring day">
-                        <figcaption>Rain has come to town</figcaption>
-                    </figure>
-
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/starrynight.jpg"
-                            alt="Image showing stars with clouds at night">
-                        <figcaption>A starfilled cloudy night</figcaption>
-                    </figure>
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/snowflakes.jpg"
-                            alt="Snowflakes in the trees">
-                        <figcaption>Snowflakes settling in</figcaption>
-                    </figure>
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/stormydrive.jpg"
-                            alt="Image showing a storm ahead">
-                        <figcaption>Storms ahead</figcaption>
-                    </figure>
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/sunny_meadow.jpg"
-                            alt="Image showing a sunny green meadow">
-                        <figcaption>Partly sunny green meadow</figcaption>
-                    </figure>
-                </div>
-                <div class="gallerypic">
-                    <figure>
-                        <img src="images/placeholder.jpg" data-src="images/sunsetcoast.jpg"
-                            alt="Image showing a coast at sunset">
-                        <figcaption>Sunset on the coast</figcaption>
-                    </figure>
-                </div>
+                <section class="weather-summary">
+                    <h3 class="weather-title">Weather Summary</h3>
+                    <p>Currently: <span id="current"> </span> </p>
+                    <p>High: <span id="hightemp"> </span> &#8457;</p>
+                    <p>Wind Chill: <span id="windchill"> </span> </p>
+                    <p>Humidity: <span id="humidity"> </span> % </p>
+                    <p>Wind Speed: <span id="windspeed"> </span> mph </p>
+                </section>
             </div>
+
+            <div class="maincontentbox">
+                <div class="big forecast">
+                    <h3>5 Day Forecast</h3>
+                    
+                </div>
+                <!-- <div class="big forecast">
+                    <h3>5 Day Forecast</h3>
+                    <h4>Monday</h4>
+                    <img src="images/weatherconditions/cloudy.png" alt="cloudy">
+                    <h4>Tuesday</h4>
+                    <img src="images/weatherconditions/snow.png" alt="snowy">
+                    <h4>Wednesday</h4>
+                    <img src="images/weatherconditions/sun.png" alt="sunny">
+                    <h4>Thursday</h4>
+                    <img src="images/weatherconditions/thunderstorm.png" alt="thunderstorm">
+                    <h4>Friday</h4>
+                    <img src="images/weatherconditions/partlycloudy.png" alt="partlyc cloudy">
+                </div> -->
+            </div>
+            <article>
+                <div class="article-text">
+                    <h3 class="article-title">Visit Scenic Preston</h3>
+                    <h4 class="article-author">by Drew Parkinson</h4>
+                    <img src="./images/scenic.jpg" alt="ArticlePhoto">
+                    <p>Preston has beautiful winding
+                        country roads that meander through the
+                        hillsides. In the autumn, you can catch the changing leaf colors. In
+                        the winter you can enjoy the slopes.
+                        A walk through the splendid fall leaves of Preston will certainly bring some pink to your
+                        cheeks! Take time this weekend to
+                        explore the great outdoors with friends and family. Be sure to stop by the Preston Farmers
+                        Market. In December the market will
+                        switch to a Christmas market featuring wares from vendors state-wide.</p>
+                </div>
+
+            </article>
         </main>
         <footer>
             <div class="footer-town">
@@ -165,7 +149,9 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/lazyload.js" defer></script>
+    <script src="js/weather-Preston.js"></script>
+    <script src="js/windchill.js"></script>
+
 </body>
 
 </html>
