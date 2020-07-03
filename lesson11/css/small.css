@@ -122,16 +122,28 @@
     /* margin: 10px auto; */
   }
 
+  .summary-block {
+    display: block;
+    padding: 10px;
+    margin-bottom: 1em;
+  }
+  
   .weather-summary {
     position: absolute;
     top: 1rem;
     left: 1rem;
+    border: solid 1px;
     background: radial-gradient(#82a3a1, #465362);
-    padding-bottom: 4px;
+    padding: 8px;
     margin-bottom: auto;
   }
+
+  .weather-title {
+    padding: 1rem;
+  }
+
   /* Picture gallery */
-  .imagegallery {    
+  .imagegallery {
     display: grid;
     max-width: 1460px;
     /* grid-template-columns: 1fr; */
@@ -147,11 +159,11 @@
     align-items: center;
   }
 
-  .gallerypic > p{
+  .gallerypic>p {
     min-height: 60px;
   }
 
-  figcaption{
+  figcaption {
     min-height: 60px;
     text-align: center;
   }
@@ -166,7 +178,7 @@
     padding: 5px;
   }
 
-  .gallerypic > p {
+  .gallerypic>p {
     min-height: 30px;
   }
 
@@ -616,6 +628,26 @@
 
   .forecast section p {
     color: white;
+  }
+
+  article.townevents {
+    border: none;
+    background-color: #82a3a1;
+    color: #000000;
+    box-shadow: 10px 10px 20px;
+    padding: 1em;
+  }
+
+  article.townevents h2 {
+    text-align: center;
+    margin: 5px;
+  }
+
+  article.townevents li {
+    text-align: left;
+  }
+  article.townevents ul {
+    list-style-type: none;
   }
 
 }

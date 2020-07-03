@@ -4,22 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="WDD 230 Weather Site page for BYUI">
+    <meta name="description" content="Fish Haven WDD 230 Weather Site page for BYUI">
     <title>GitRDone Weather</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:300,700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/site.js"></script>
-    <script src="js/banner.js"></script>
 </head>
 
 <body onload="GetFileInfo()">
     <div class="container">
-        <div id="banner">Saturday = Preston Pancakes in the Park! <br>
-            9:00 a.m. Saturday at the city park pavilion.</div>
         <header>
             <div class="logoheading">
                 <img class="sitelogo" src="./images/sitelogo.jpg" alt="Thundercloud logo">
@@ -36,20 +31,20 @@
             <ul class="flex-nav">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="../lesson11/index.html">Home</a></li>
-                <li class="active"><a href="./preston.html">Preston</a></li>
+                <li><a href="./preston.html">Preston</a></li>
                 <li><a href="./sodasprings.html">Soda Springs</a></li>
-                <li><a href="./fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="./fishhaven.html">Fish Haven</a></li>
                 <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
                 <li><a href="../lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Preston Idaho</h2>
+            <h2>Fish Haven Idaho</h2>
             <div class="herobanner">
                 <picture>
-                    <source srcset="./images/prestonM.jpg" media="(min-width:425px) and (max-width: 799px)">
-                    <source srcset="./images/prestonL.jpg" media="(min-width: 800px)">
-                    <img class="herobanner-image" src="./images/prestonS.jpg" alt="Preston Town Photo">
+                    <source srcset="./images/fishhavenM.jpg" media="(min-width:425px) and (max-width: 799px)">
+                    <source srcset="./images/fishhavenL.jpg" media="(min-width: 800px)">
+                    <img class="herobanner-image" src="./images/fishhavenS.jpg" alt="Fish Haven Town Photo">
                 </picture>
                 <article class="summary-block">
                 <section class="weather-summary">
@@ -68,35 +63,19 @@
                     <h3>5 Day Forecast</h3>
 
                 </div>
-                <!-- <div class="big forecast">
-                    <h3>5 Day Forecast</h3>
-                    <h4>Monday</h4>
-                    <img src="images/weatherconditions/cloudy.png" alt="cloudy">
-                    <h4>Tuesday</h4>
-                    <img src="images/weatherconditions/snow.png" alt="snowy">
-                    <h4>Wednesday</h4>
-                    <img src="images/weatherconditions/sun.png" alt="sunny">
-                    <h4>Thursday</h4>
-                    <img src="images/weatherconditions/thunderstorm.png" alt="thunderstorm">
-                    <h4>Friday</h4>
-                    <img src="images/weatherconditions/partlycloudy.png" alt="partlyc cloudy">
-                </div> -->
             </div>
             <article class="townevents"></article>
             <article>
                 <div class="article-text">
-                    <h3 class="article-title">Visit Scenic Preston</h3>
-                    <h4 class="article-author">by Drew Parkinson</h4>
-                    <img src="./images/scenic.jpg" alt="ArticlePhoto">
-                    <p>Preston has beautiful winding
-                        country roads that meander through the
-                        hillsides. In the autumn, you can catch the changing leaf colors. In
-                        the winter you can enjoy the slopes.
-                        A walk through the splendid fall leaves of Preston will certainly bring some pink to your
-                        cheeks! Take time this weekend to
-                        explore the great outdoors with friends and family. Be sure to stop by the Preston Farmers
-                        Market. In December the market will
-                        switch to a Christmas market featuring wares from vendors state-wide.</p>
+                    <h3 class="article-title">Fisherman's Paradise</h3>
+                    <h4 class="article-author">by Trout Baitman</h4>
+                    <img src="./images/dock.jpg" alt="Man Fishing on the dock">
+                    <p>If you are looking for a perfect fishing getaway to commune with nature, then 
+                        Fish Haven is the place for you.  From the fresh water trout to the myriad of scenic
+                        hikes thoughout the hills, there is plenty to keep a family busy or just settle
+                        back for a nice relaxing weekend. If you are looking for a scenic drive, be sure to
+                        check out Bear Lake.  Easy access to National Forests as well.  See you soon!  We'll 
+                        save you a fish.</p>
                 </div>
 
             </article>
@@ -135,7 +114,7 @@
                 </div>
 
                 <div class="footer-town-map">
-                    <img class="footer-map" src="./images/prestonMap.png" alt="Map of Preston">
+                    <img class="footer-map" src="./images/fishhavenMap.jpg" alt="Map of Fish Haven">
                 </div>
             </div>
             <div id="footerInfo">
@@ -147,13 +126,10 @@
             </div>
         </footer>
     </div>
-    <script>
-        displayBanner()
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/townData.js"></script>
-    <script src="js/prestonData.js"></script>
+    <script src="js/fishhavenData.js"></script>
     <script src="js/windchill.js"></script>
 
 </body>
