@@ -78,7 +78,6 @@ function getTownEventsAPI(apiURL, townName) {
     .then((response) => response.json())
     .then((jsObject) => {
       const events = document.querySelector('.townevents');
-      //let towns = jsObject['towns'];
       // filter the list to only find the town we passed in
       let towns = jsObject['towns'].filter(element => element.name.includes(townName));
       // Parse the town data
