@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="WDD 230 Scoots Site Home page for BYUI">
+    <title>GitRDone Weather</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/jsonTowns.js"></script>
+    <script src="js/site.js"></script>
+</head>
+
+<body onload="GetFileInfo()">
+    <div class="container">
+        <header>
+            <div class="logoheading">
+                <img class="sitelogo" src="./images/Scoots-logo_tagline.jpg" alt="Scoots logo">
+                <section class="headingtext">
+                    <h1>Scoots</h1><br>
+                    <div class="byline">
+                        <h2>adventure awaits!</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main class="thanks">
+            <br><br>
+                <h1>Thank you.  A representative will be in touch.</h1>
+                    <p>Have a great day!</p><br><br>
+            <br>
+        </main>
+        <footer>
+            <div class="footer-rental">
+
+                <div class="footer-contacts">
+                    <div class="footer-address">
+                        <p class="contact-address-title">Skoots Rentals</p>
+                        <p class="contact-address">123 E. San Cinco de Mayo</p>
+                        <p class="contact-address">Cozumel Q.R., Mexico</p>
+                    </div>
+
+                    <div class="footer-comms">
+                        <p class="communication-phonenumber"><span class="entity-contact">&#9742;</span>&#160;
+                            123-555-1234</p>
+                        <p class="communication-mail"><span class="entity-contact"> &#9993; </span>info@scoots-cozumel.com
+                        </p>
+                    </div>
+
+                    <div class="footer-socialmedia">
+                        <a class="link-socialmedia" href="https://www.facebook.com">
+                            <img class="logo-social" src="./images/facebook.png"
+                                alt="Facebook social media link and logo."></a>
+                        <a class="link-socialmedia" href="https://www.pinterest.com">
+                            <img class="logo-social" src="./images/pinterest.png"
+                                alt="Pinterest social media link and logo."></a>
+                        <a class="link-socialmedia" href="https://twitter.com">
+                            <img class="logo-social" src="./images/twitter.png"
+                                alt="Twitter social media link and logo."></a>
+                        <a class="link-socialmedia" href="https://www.instagram.com">
+                            <img class="logo-social" src="./images/intagram.png"
+                                alt="WhatsApp social media link and logo."></a>
+                    </div>
+                </div>
+
+                <div class="footer-town-map">
+                    <img class="footer-map" src="./images/cozumelMap.jpg" alt="Map of Cozumel">
+                </div>
+            </div>
+            <div id="footerInfo">
+                <p>&copy; Scoots <span id="year"></span> | <a
+                        href="../lesson11/attributions.html">Attributions</a> | Drew Parkinson</p>
+            </div>
+            <div>
+                <span id="currentDate"></span>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script>
+        getHomePageData()
+    </script>
+</body>
+
+</html>
