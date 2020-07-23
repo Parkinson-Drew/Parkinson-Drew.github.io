@@ -14,145 +14,148 @@
 </head>
 
 <body onload="GetFileInfo()">
-        <header>
-            <div class="logoheading">
-                <img class="sitelogo" src="./images/Scoots-logo_tagline.jpg" alt="Scoots logo">
-                <section class="headingtext">
-                    <h1>Scoots</h1><br>
-                    <div class="byline">
-                        <h2>adventure awaits!</h2>
-                    </div>
-                </section>
-            </div>
-            
-        </header>
-        <nav>
-            <ul class="flex-nav">
-                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li></li><a href="./index.html">Home</a></li>
-                <li><a href="./rentals.html">Rentals</a></li>
-                <li class="active"><a href="./reservations.html">Reservations</a></li>
-                <li><a href="./tours.html">Tours</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
+    <header>
+        <div class="logoheading">
+            <img class="sitelogo" src="./images/Scoots-logo_tagline.jpg" alt="Scoots logo">
+            <section class="headingtext">
+                <h1>Scoots</h1><br>
+                <div class="byline">
+                    <h2>adventure awaits!</h2>
+                </div>
+            </section>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="flex-nav">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li></li><a href="./index.html">Home</a></li>
+            <li><a href="./rentals.html">Rentals</a></li>
+            <li class="active"><a href="./reservations.html">Reservations</a></li>
+            <li><a href="./tours.html">Tours</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="colorstrip"></div>
+    <main>
+        <div class="resinfo">
+            <h2>Rental Reservations</h2>
+            <h3 class="reservationInfo">Information and Services</h3>
+            <img id="ResDesk" src="images/XL-ReservationDesk.jpg" alt="Villa Helena">
+            <ul class="reservationList">
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid driver license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to any Scoots locations.</li>
             </ul>
-        </nav>
-        <div id="colorstrip"></div>
-        <main>
-            <div class="resinfo">
-                <h2>Rental Reservations</h2>
-                <h3 class="reservationInfo">Information and Services</h3>
-                <img id="ResDesk" src="images/XL-ReservationDesk.jpg" alt="Villa Helena">
-                <ul class="reservationList">
-                    <li>A $50 security deposit is required to confirm reservations.</li>
-                    <li>A valid driver license is required in hand at time of rental.</li>
-                    <li>No one under 12 years of age are allowed to ride on the scooters.</li>
-                    <li>Fuel charge not included.</li>
-                    <li>Unlimited mileage.</li>
-                    <li>Liability insurance is free of charge.</li>
-                    <li>Reservations rate requires 24 hour prior notification.</li>
-                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-                    <li>Payment via Google pay, cash, credit card, debit card, or PayPal.</li>
-                    <li>Rentals may be returned to any  Scoots locations.</li>
-                </ul>
-            </div>
-            <br>
-            <br>     
-            <hr style="height: 3px; border-width:0; background-color: #FFA62B;">                   
-            <div class="reservationsForm">
-                <form action="confirmation.html" method="get">
-                    <fieldset class="personal">
-                        <legend>Personal Information</legend>
-                        <label class="top"> First and Last name* <input type="text" name="name" pattern="[A-Za-z].{4,}"
+        </div>
+        <br>
+        <br>
+        <hr style="height: 3px; border-width:0; background-color: #FFA62B;">
+        <div class="reservationsForm">
+            <form action="confirmation.html" method="get">
+                <fieldset class="personal">
+                    <legend>Personal Information</legend>
+                    <label class="top"> First and Last name* <input type="text" name="name" pattern="[A-Za-z].{4,}"
                             placeholder="Jason Chill" required></label>
-                        <label class="top">Phone* <input type="tel" name="phone" placeholder="123-456-7890"></label>
-                        <label class="top">Email* <input type="email" name="email" placeholder="person@byui.com" required></label>
-                        <label class="top">Address* <input type="text" name="address" placeholder="mailing address" required></label>
-                        <label class="top">Date* <input type="date" name="date" placeholder="when to when" required></label>
-                        <label class="top">Period* <input type="time" name="time" placeholder="when to when" required></label>
-                        <label class="top">Cruise Line (if applicable)<input type="text" name="cruise"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="123-456-7890"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="person@byui.com"
+                            required></label>
+                    <label class="top">Address* <input type="text" name="address" placeholder="mailing address"
+                            required></label>
+                    <label class="top">Date* <input type="date" name="date" placeholder="when to when" required></label>
+                    <label class="top">Period* <input type="time" name="time" placeholder="when to when"
+                            required></label>
+                    <label class="top">Cruise Line (if applicable)<input type="text" name="cruise"></label>
 
-                        <h4>Additional information or comments:</h4>
-                        <textarea name="Cruise Line" id="question" cols="30" rows="6"></textarea>    
-                    </fieldset>
+                    <h4>Additional information or comments:</h4>
+                    <textarea name="Cruise Line" id="question" cols="30" rows="6"></textarea>
+                </fieldset>
 
-                    <fieldset class="details">
-                        <legend>Rental Details</legend>
-                        <label class="top">Pickup Date* <input type="date" name="pickupdate" required></label>
-                        <label class="top">Dropoff Date* <input type="date" name="dropoffdate" required></label>
-                        <label class="top">Number of People <input type="text" name="numberpeople"></label>
-                        <label class="top">Rental Type
-                            <select name="vehicle">
-                                <option value="">Choose a Vehicle&#9662; </option>
-                                <option value="dio">Honda Dio</option>
-                                <option value="metro">Honda Metro</option>                                
-                                <option value="pcx150">Honda PCX150</option>
-                                <option value="atv">Honda Side-by-side</option>
-                                <option value="Jeep2">Jeep 2-Door</option>
-                                <option value="Jeep4">Jeep 4-Door</option>
-                            </select>
-                        </label>
-    
-                        <label class="top">Rental Location
-                            <select name="location">
-                                <option value="">Choose a Location&#9662; </option>
-                                <option value="north">Cruise Ship Terminal</option>
-                                <option value="south">Puerta Maya Terminal</option>
-                            </select>
-                        </label>
-                        <h4>Special Accommodations:</h4>
-                        <textarea name="comments" id="comments" cols="30" rows="6"></textarea>
-                    </fieldset>
-                    <input type="submit" value="Submit Reservation Request" cols="30" class="submitBtn">                                     
-                </form>
-            </div>
+                <fieldset class="details">
+                    <legend>Rental Details</legend>
+                    <label class="top">Pickup Date* <input type="date" name="pickupdate" required></label>
+                    <label class="top">Dropoff Date* <input type="date" name="dropoffdate" required></label>
+                    <label class="top">Number of People <input type="text" name="numberpeople"></label>
+                    <label class="top">Rental Type
+                        <select name="vehicle">
+                            <option value="">Choose a Vehicle&#9662; </option>
+                            <option value="dio">Honda Dio</option>
+                            <option value="metro">Honda Metro</option>
+                            <option value="pcx150">Honda PCX150</option>
+                            <option value="atv">Honda Side-by-side</option>
+                            <option value="Jeep2">Jeep 2-Door</option>
+                            <option value="Jeep4">Jeep 4-Door</option>
+                        </select>
+                    </label>
 
-            
-        </main>
-        <footer>
-            <div class="footer-town">
+                    <label class="top">Rental Location
+                        <select name="location">
+                            <option value="">Choose a Location&#9662; </option>
+                            <option value="north">Cruise Ship Terminal</option>
+                            <option value="south">Puerta Maya Terminal</option>
+                        </select>
+                    </label>
+                    <h4>Special Accommodations:</h4>
+                    <textarea name="comments" id="comments" cols="30" rows="6"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit Reservation Request" cols="30" class="submitBtn">
+            </form>
+        </div>
 
-                <div class="footer-contacts">
-                    <div class="footer-address">
-                        <p class="contact-address-title">Scoots Rentals</p>
-                        <p class="contact-address">123 E. San Cinco de Mayo</p>
-                        <p class="contact-address">Cozumel Q.R., Mexico</p>
-                    </div>
 
-                    <div class="footer-comms">
-                        <p class="communication-phonenumber"><span class="entity-contact">&#9742;</span>&#160;
-                            123-555-1234</p>
-                        <p class="communication-mail"><span class="entity-contact"> &#9993; </span>info@scoots-cozumel.com
-                        </p>
-                    </div>
+    </main>
+    <footer>
+        <div class="footer-town">
 
-                    <div class="footer-socialmedia">
-                        <a class="link-socialmedia" href="https://www.facebook.com">
-                            <img class="logo-social" src="./images/facebook.png"
-                                alt="Facebook social media link and logo."></a>
-                        <a class="link-socialmedia" href="https://www.pinterest.com">
-                            <img class="logo-social" src="./images/pinterest.png"
-                                alt="Pinterest social media link and logo."></a>
-                        <a class="link-socialmedia" href="https://twitter.com">
-                            <img class="logo-social" src="./images/twitter.png"
-                                alt="Twitter social media link and logo."></a>
-                        <a class="link-socialmedia" href="https://www.instagram.com">
-                            <img class="logo-social" src="./images/intagram.png"
-                                alt="WhatsApp social media link and logo."></a>
-                    </div>
+            <div class="footer-contacts">
+                <div class="footer-address">
+                    <p class="contact-address-title">Scoots Rentals</p>
+                    <p class="contact-address">123 E. San Cinco de Mayo</p>
+                    <p class="contact-address">Cozumel Q.R., Mexico</p>
                 </div>
 
-                <div class="footer-Scoots">
-                    <img class="footer-map" src="./images/Small-blueDoor.jpg" alt="Cozumel">
+                <div class="footer-comms">
+                    <p class="communication-phonenumber"><span class="entity-contact">&#9742;</span>&#160;
+                        123-555-1234</p>
+                    <p class="communication-mail"><span class="entity-contact"> &#9993; </span>info@scoots-cozumel.com
+                    </p>
+                </div>
+
+                <div class="footer-socialmedia">
+                    <a class="link-socialmedia" href="https://www.facebook.com">
+                        <img class="logo-social" src="./images/facebook.png"
+                            alt="Facebook social media link and logo."></a>
+                    <a class="link-socialmedia" href="https://www.pinterest.com">
+                        <img class="logo-social" src="./images/pinterest.png"
+                            alt="Pinterest social media link and logo."></a>
+                    <a class="link-socialmedia" href="https://twitter.com">
+                        <img class="logo-social" src="./images/twitter.png"
+                            alt="Twitter social media link and logo."></a>
+                    <a class="link-socialmedia" href="https://www.instagram.com">
+                        <img class="logo-social" src="./images/intagram.png"
+                            alt="WhatsApp social media link and logo."></a>
                 </div>
             </div>
-            <div id="footerInfo">
-                <p>&copy; Scoots <span id="year"></span> | <a
-                        href="../lesson11/attributions.html">Attributions</a> | Drew Parkinson</p>
+
+            <div class="footer-Scoots">
+                <img class="footer-map" src="./images/Small-blueDoor.jpg" alt="Cozumel">
             </div>
-            <div>
-                <span id="currentDate"></span>
-            </div>
-        </footer>
+        </div>
+        <div id="footerInfo">
+            <p>&copy; Scoots <span id="year"></span> | <a href="../lesson11/attributions.html">Attributions</a> | Drew
+                Parkinson</p>
+        </div>
+        <div>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
 
