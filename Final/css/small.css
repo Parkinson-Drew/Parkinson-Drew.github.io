@@ -691,7 +691,16 @@ div.tourGallery figure figcaption {
     margin: auto;
     max-width: 60px;
   }
-
+  .contactMaps {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+  }
+  
+  .map {
+    margin: 5px;
+  }
 
   /* FOOTER MAP */
   .footer-town-map {

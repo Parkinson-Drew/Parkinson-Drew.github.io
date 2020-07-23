@@ -124,6 +124,10 @@
       justify-items: center;
     }
   
+    .contactMaps {
+      padding: 40px;
+    }
+    
     figure {
       margin: 0;
     }
