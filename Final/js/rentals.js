@@ -59,22 +59,22 @@ fetch(requestURL)
             let tr = document.createElement('tr');
             let type = document.createElement('td');
             let capacity = document.createElement('td');
-            let halfDayReserv = document.createElement('td');
-            let fullDayReserv = document.createElement('td');
+            let halfDayReservation = document.createElement('td');
+            let fullDayReservation = document.createElement('td');
             let halfDayWalk = document.createElement('td');
             let fullDayWalk = document.createElement('td');
 
             type.textContent = rentalinfo[i].type;
             capacity.textContent = rentalinfo[i].capacity;
-            halfDayReserv.textContent = rentalinfo[i].halfDayReserv;
-            fullDayReserv.textContent = rentalinfo[i].fullDayReserv;
+            halfDayReservation.textContent = rentalinfo[i].halfDayReservation;
+            fullDayReservation.textContent = rentalinfo[i].fullDayReservation;
             halfDayWalk.textContent = rentalinfo[i].halfDayWalk;
             fullDayWalk.textContent = rentalinfo[i].fullDayWalk;
 
             table.appendChild(type);
             table.appendChild(capacity);
-            table.appendChild(halfDayReserv);
-            table.appendChild(fullDayReserv);
+            table.appendChild(halfDayReservation);
+            table.appendChild(fullDayReservation);
             table.appendChild(halfDayWalk);
             table.appendChild(fullDayWalk);
             table.appendChild(tr);
