@@ -621,7 +621,7 @@ form input.contactBtn {
 div.tourGallery {
   padding: 1rem 2%;
   display: grid;
-grid-template-columns: flex;
+
 }
 
 div.tourGallery figure {
